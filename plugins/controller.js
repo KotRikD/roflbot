@@ -7,6 +7,7 @@ const commands = async (bot, message, args) => {
     for (let c of commands) {
         resultCommands.push(`!${c['command']}`)
     }
+    resultCommands.sort();
     return await message.send(`Команды в боте:\n${resultCommands.join('\n')}`)
 }
 
