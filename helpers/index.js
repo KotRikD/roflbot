@@ -45,7 +45,7 @@ module.exports = {
                 return await message.send("", { attachment: `photo${image['ownerId']}_${image['id']}`})
             }
 
-            if (result !== null && !needEval !== null) {
+            if (result !== null && needEval !== null) {
                 try {
                     result = eval(needEval)
                 } catch (e) {
